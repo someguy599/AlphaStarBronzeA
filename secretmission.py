@@ -1,17 +1,14 @@
-name = input("").strip()
+name = input("").strip().lower()
 namenum = 1
 
-code = input("").strip()
+code = input("").strip().lower()
 codenum = 1
 
 for a in name:
-    print(a, ord(a)-96)
+    namenum *= (ord(a) - 96)
 
 for b in code:
-    print(b, ord(b)-96)
+    codenum *= (ord(b) - 96)
 
-namenum = namenum % 47
-codenum = codenum % 47
-
-if namenum == codenum: print("GO", namenum, codenum)
-else: print("STAY", namenum, codenum)
+if namenum % 47 == codenum % 47: print("GO")
+else: print("STAY")
