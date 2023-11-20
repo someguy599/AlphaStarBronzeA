@@ -21,9 +21,8 @@ OUTPUT FORMAT
 * Line 1: A single line with the word “GO” if the cow should go on the mission or the word “STAY” otherwise.
 
 SAMPLE INPUT
-
 BESSIE
 FBHS
-SAMPLE OUTPUT
 
+SAMPLE OUTPUT
 GO
