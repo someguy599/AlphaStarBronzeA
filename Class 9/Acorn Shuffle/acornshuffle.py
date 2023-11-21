@@ -1,23 +1,3 @@
-'''def shift(originallist):
-    newlist = []
-    for a in range(1, len(originallist)):
-        newlist.append(originallist[a])
-    newlist.append(originallist[0])
-    return newlist
-
-
-N = int(input(""))
-positions = list(map(int, input("").split(" ")))
-unorganized = list(map(int, input("").split(" ")))
-acorns = []
-
-for i in range(N):
-    position = positions[i] - 1
-    acorn = unorganized[i]
-    acorns.insert(position, acorn)
-
-print(acorns)'''
-
 def shift(originallist, pattern, num):
     newlist = []
     for k in range(num):
@@ -26,6 +6,7 @@ def shift(originallist, pattern, num):
     for i in range(num):
         position = pattern.index(i+1)
         newlist[position] = originallist[i]
+        
     return newlist
 
 N = int(input(""))
