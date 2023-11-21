@@ -14,8 +14,6 @@ for k in range(N):
 
 for line in a:
     for char in line:
-        if char != 0:
-            print(f"{char}", end = " ")
-        else:
-            print(' ', end = " ")
+        if char != 0: print(f"{char}", end = " ")
+        else: print(' ', end = " ")
     print('')
